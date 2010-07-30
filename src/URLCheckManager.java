@@ -62,7 +62,7 @@ public class URLCheckManager extends Thread {
 		//now sort and display
 		System.out.println("\n\nDone, Reporting:");
 		ArrayList<String> avoid = new ArrayList<String>();
-		avoid.add("http://www.me.ttu.edu/ME/ClassWebsites");
+		//add urls to the avoid ArrayList to not display broken links coming from them.
 		int totalBroken = 0;
 		for (String url : URLs.keySet()) {
 			URLStat stat = URLs.get(url);
